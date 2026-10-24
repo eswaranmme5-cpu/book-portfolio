@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Book Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="book">
+        
+        <div class="paper" id="p1">
+            <div class="front cover">
+                <div class="front-content">
+                    <h1>My Portfolio</h1>
+                    <button id="open-btn" class="btn hero-btn">
+                        <span class="btn-label">
+                            <i class="fas fa-book-open"></i>
+                            <span>Open Book</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="back page-left">
+                <div class="page-content profile-page">
+                    <button class="ai-chat-toggle" id="ai-chat-toggle" type="button" aria-label="Open AI Mouse assistant" aria-expanded="false" aria-controls="ai-chat-panel">
+                        <i class="fas fa-book-open" aria-hidden="true"></i>
+                        <span class="ai-pulse"></span>
+                    </button>
+                    <section class="ai-chat-panel" id="ai-chat-panel" aria-label="AI Mouse assistant" hidden>
+                        <div class="ai-chat-header">
+                            <span class="ai-book-mark"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                            <div>
+                                <strong> Mouse 🐭</strong>
+                                <span>Ask about my portfolio</span>
+                            </div>
+                            <button class="ai-chat-close" id="ai-chat-close" type="button" aria-label="Close AI assistant">
+                                <i class="fas fa-times" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="ai-chat-messages" id="ai-chat-messages" aria-live="polite">
+                            <p class="ai-message ai-message-bot">Hi! I'm Mouse, Eswaran's AI assistant. Ask me about my boss's portfolio in any language.</p>
+                        </div>
+                        <form class="ai-chat-form" id="ai-chat-form">
+                            <label class="sr-only" for="ai-chat-input">Message for AI Mouse</label>
+                            <input id="ai-chat-input" type="text" placeholder="Ask a question..." autocomplete="off" required>
+                            <button type="submit" aria-label="Send message"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+                        </form>
+                    </section>
+                    <img src="img/WhatsApp Image 2026-06-13 at 6.23.52 PM.jpeg" alt="Profile" class="profile-img">
+                    <h2>Eswaran M</h2>
+                    <h3 class="role">Web Developer</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/eswaran-m-460152413" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/eswaranmme5-cpu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_e_z_z_z_?igsh=cGdkdDN4OGZuOGs0" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="bio">Hi, I'm a Web Developer. I specialize in building responsive, interactive, and modern web applications from frontend layouts to backend databases.</p>
+                    <div class="profile-buttons">
+                        <button class="btn btn-outline">Download CV</button>
+                        <button class="btn btn-solid contact-btn">Contact Me</button>
+                    </div>
+                    <div class="pagination">
+                        <span>1</span>
+                        <i class="fas fa-chevron-right next-btn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper" id="p2">
+            <div class="front page-right">
+                <div class="page-content">
+                    <h2 class="title">Work Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="circle"></div>
+                            <span class="date">Sept 2025 - Oct 2025</span>
+                            <h4>Web Development Intern</h4>
+                            <h5>Saiket Systems</h5>
+                            <p>Developed personal blog layouts and responsive image galleries using HTML, CSS, and JavaScript. Focused on modern web design principles.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle"></div>
+                            <span class="date">2024 - Present</span>
+                            <h4>Independent Projects</h4>
+                            <h5>Freelance / Academic</h5>
+                            <p>Built full-stack applications utilizing Python and MongoDB, and managed containerized environments with Docker.</p>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <i class="fas fa-chevron-left prev-btn"></i>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="back page-left">
+                <div class="page-content">
+                    <h2 class="title">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="circle"></div>
+                            <span class="date">2025 - 2027</span>
+                            <h4>Master of Computer Applications</h4>
+                            <h5>E.G.S. Pillay Engineering College</h5>
+                            <p>Advanced coursework in Python, web development, and modern database management.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle"></div>
+                            <span class="date">2022 - 2025</span>
+                            <h4>Bachelor of Computer Science</h4>
+                            <h5>E.G.S. Pillay Arts and Science College</h5>
+                            <p>Studied core concepts in programming, databases, and software development.</p>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <span>3</span>
+                        <i class="fas fa-chevron-right next-btn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper" id="p3">
+            <div class="front page-right">
+                <div class="page-content">
+                    <h2 class="title">My Skills</h2>
+                    <div class="skills-section">
+                        <h4>Core Web</h4>
+                        <div class="skills-grid">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                            <span><i class="fab fa-react"></i> React</span>
+                            <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        </div>
+                        <h4 style="margin-top: 15px;">Backend & Data</h4>
+                        <div class="skills-grid">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-database"></i> MongoDB</span>
+                            <span><i class="fas fa-database"></i> MySQL</span>
+                            <span><i class="fas fa-server"></i> Cassandra</span>
+                            <span><i class="fab fa-docker"></i> Docker</span>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <i class="fas fa-chevron-left prev-btn"></i>
+                        <span>4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="back page-left">
+                <div class="page-content">
+                    <h2 class="title">Contact Me!</h2>
+                    <form id="contact-form" class="contact-form">
+                        <input id="name" type="text" placeholder="Full Name" required>
+                        <input id="email" type="email" placeholder="Email Address" required>
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-solid" style="width: 100%; margin-top: 10px;">Send Message</button>
+                    </form>
+                    <div class="pagination">
+                        <span>5</span>
+                        <i class="fas fa-chevron-right next-btn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper" id="p4">
+            <div class="front page-right">
+                <div class="page-content">
+                    <h2 class="title">Latest Project</h2>
+                    <div class="latest-project-container">
+                        <img src="img/Screenshot 2026-07-04 152643.png" alt="PharmaCare" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-name">Pharmacare</h3>
+                            <p class="project-tech-label"><strong>Tech Used</strong></p>
+                            <p class="project-tech">HTML, CSS, JS, React, Node.js, MongoDB</p>
+                            <p class="project-description">Medicine online ordering system</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/eswaranmme5-cpu" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Source Code</a>
+                                <a href="#" class="btn btn-outline">More Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <i class="fas fa-chevron-left prev-btn"></i>
+                        <span>6</span>
+                    </div>
+                </div>
+            </div>
+            <div class="back page-left">
+                <div class="page-content thank-you-page">
+                    <div class="thank-you-container">
+                        <div class="animated-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h2 class="thank-you-title">Thank You!</h2>
+                        <p class="thank-you-subtitle">For taking the time to explore my portfolio</p>
+                        
+                        <div class="thank-you-message">
+                            <p>Your interest means a lot to me. I'm excited to discuss how I can contribute to amazing projects and help bring ideas to life.</p>
+                        </div>
+                        
+                        <div class="cta-container">
+                            <a href="#" class="cta-btn primary-btn"><i class="fas fa-envelope"></i> Get in Touch</a>
+                            <a href="#" class="cta-btn secondary-btn"><i class="fas fa-arrow-right"></i> Back to Start</a>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <p class="connect-label">Connect with me</p>
+                            <div class="connect-icons">
+                                <a href="https://www.linkedin.com/in/eswaran-m-460152413" target="_blank" rel="noopener noreferrer" class="connect-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/eswaranmme5-cpu" target="_blank" rel="noopener noreferrer" class="connect-icon" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/_e_z_z_z_?igsh=cGdkdDN4OGZuOGs0" target="_blank" rel="noopener noreferrer" class="connect-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <span>7</span>
+                        <i class="fas fa-chevron-right next-btn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper" id="p5">
+            <div class="front page-right">
+                <div class="page-content" style="align-items: center; justify-content: center; text-align: center;">
+                    <h2 class="title"></h2>
+                    <p style="color: #777; margin-top: 10px;"></p>
+                    <div class="pagination">
+                        <span>9</span>
+                        <i class="fas fa-chevron-right next-btn"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="back cover">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Page arrows (phones only) -->
+    <div class="nav-controls" id="nav-controls">
+        <button id="nav-prev" type="button" aria-label="Previous page"><i class="fas fa-chevron-left"></i></button>
+        <button id="nav-next" type="button" aria-label="Next page"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
